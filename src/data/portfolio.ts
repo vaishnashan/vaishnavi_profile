@@ -38,8 +38,8 @@ export interface ExperienceItem {
   end: string; // use "Present" for ongoing roles
   summary?: string;
   points: string[];
+  links?: { label: string; url: string }[];
 }
-
 export interface ProjectItem {
   name: string;
   tag: string; // short category label, e.g. "Flagship Academic Project"
@@ -171,6 +171,24 @@ export const experience: ExperienceItem[] = [
     points: [
       "Designed and trained a lightweight multi-scale CNN for 4-class Li-ion battery fault diagnosis on multivariate time series data, achieving 92.81% accuracy (0.928 weighted F1) while outperforming CNN, CNN-LSTM, GRU, and LSTM baselines with the fewest parameters (32.6K), validated through systematic ablation studies.",
       "Co-authored and presented the research paper \"Lightweight CNN-Based Embedded System for Li-Ion Battery Fault Diagnosis,\" accepted for publication at the 2026 Moratuwa Engineering Research Conference (MERCon), IEEE.",
+    ],
+  },
+  {
+    org: "Kilinochchi Divisional Secretariat",
+    role: "Volunteer Software Developer",
+    location: "Kilinochchi, Sri Lanka",
+    start: "2025",
+    end: "2025",
+    summary:
+      "Unpaid community-service initiative building digital record-keeping tools for a government office.",
+    points: [
+      "Independently designed and deployed 3 web-based dashboards (Python, Streamlit) to digitize and visualize administrative data: Visitor Records, Electricity Consumption, and Water Supply Tracking.",
+      "Built end-to-end — data pipeline, interactive UI, and cloud deployment — currently used by Divisional Secretariat staff for daily record-keeping and reporting, replacing manual paper-based logs.",
+    ],
+    links: [
+      { label: "Visitor Dashboard", url: "https://visitordashboardnew-refj3ovpufdzjt3aqhxdak.streamlit.app/" },
+      { label: "Electricity Dashboard", url: "https://electricity-3yrocwmzrlmstnowdc8a8l.streamlit.app/" },
+      { label: "Water Supply Dashboard", url: "https://watersuppy-arpbpuos8frf2btqyszkapp.streamlit.app/" },
     ],
   },
 ];

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 import { experience } from "../data/portfolio";
 import SectionHeading from "./SectionHeading";
 
@@ -40,6 +41,22 @@ export default function Experience() {
               </p>
               {item.summary && (
                 <p className="mt-3 text-slate-500 italic">{item.summary}</p>
+              )}
+              {item.links && item.links.length > 0 && (
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {item.links.map((link) => (
+                    <a
+                      key={link.url}
+                      href={link.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="focus-ring inline-flex items-center gap-1.5 rounded-full border border-ash-200 px-3 py-1 text-xs text-slate-500 hover:text-blue-600 hover:border-blue-500 transition-colors"
+                    >
+                      <ExternalLink size={12} />
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
               )}
               <ul className="mt-4 space-y-2.5">
                 {item.points.map((point, j) => (
