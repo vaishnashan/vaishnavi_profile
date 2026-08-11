@@ -117,8 +117,8 @@ export const personal: Personal = {
   // path here, for example "/photo.jpg". Leave empty to show the monogram.
   photoUrl: "/IMG_7994.jpg",
   socials: [
-    { label: "GitHub", url: "https://github.com/", icon: "github" },
-    { label: "LinkedIn", url: "https://linkedin.com/", icon: "linkedin" },
+    { label: "GitHub", url: "https://github.com/vaishnashan", icon: "github" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/vaishnavi-shanmugam/", icon: "linkedin" },
     { label: "Email", url: "mailto:shanmugamvaishna@gmail.com", icon: "mail" },
     { label: "Phone", url: "tel:+94776661617", icon: "phone" },
   ],
