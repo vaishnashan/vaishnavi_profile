@@ -180,7 +180,7 @@ export const experience: ExperienceItem[] = [
     start: "2025",
     end: "2025",
     summary:
-      "Unpaid community-service initiative building digital record-keeping tools for a government office.",
+      "community-service initiative building digital record-keeping tools for a government office.",
     points: [
       "Independently designed and deployed 3 web-based dashboards (Python, Streamlit) to digitize and visualize administrative data: Visitor Records, Electricity Consumption, and Water Supply Tracking.",
       "Built end-to-end — data pipeline, interactive UI, and cloud deployment — currently used by Divisional Secretariat staff for daily record-keeping and reporting, replacing manual paper-based logs.",
