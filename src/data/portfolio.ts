@@ -75,6 +75,8 @@ export interface AwardItem {
   title: string;
   org?: string;
   year: string;
+  /** optional path/URL to a certificate image or PDF proving the award, e.g. "/certificates/bestpaper.jpeg" */
+  url?: string;
 }
 
 export interface SkillGroup {
@@ -339,6 +341,12 @@ export const certificates: CertificateItem[] = [
 
 export const awards: AwardItem[] = [
   {
+    title: "Best Paper Award — \"Lightweight CNN-Based Embedded System for Li-Ion Battery Fault Diagnosis\"",
+    org: "MERCon 2026 (IEEE) — Robotics and Intelligent Automated Systems Track, University of Moratuwa",
+    year: "2026",
+    url: "/certificates/bestpaper.jpeg",
+  },
+  {
     title: "Dialog Merit Scholarship",
     org: "Based on GCE Advanced Level performance",
     year: "2020",
@@ -387,3 +395,4 @@ export const navLinks = [
   { label: "Awards", href: "#awards" },
   { label: "Contact", href: "#contact" },
 ];
+

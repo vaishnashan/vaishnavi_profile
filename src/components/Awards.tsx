@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, BadgeCheck, Users } from "lucide-react";
+import { Award, BadgeCheck, Users, ExternalLink } from "lucide-react";
 import { activities, awards, certificates } from "../data/portfolio";
 import SectionHeading from "./SectionHeading";
 
@@ -44,6 +44,17 @@ export default function Awards() {
                   <span className="font-mono text-xs text-ash-400 shrink-0">{a.year}</span>
                 </div>
                 {a.org && <p className="mt-0.5 text-sm text-slate-500">{a.org}</p>}
+                {a.url && (
+                  <a
+                    href={a.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1.5 inline-flex items-center gap-1 text-xs font-medium text-blue-500 hover:text-blue-600"
+                  >
+                    View certificate
+                    <ExternalLink size={12} />
+                  </a>
+                )}
               </div>
             ))}
           </Card>
@@ -56,6 +67,17 @@ export default function Awards() {
                   <span className="font-mono text-xs text-ash-400 shrink-0">{c.year}</span>
                 </div>
                 <p className="mt-0.5 text-sm text-slate-500">{c.provider}</p>
+                {c.url && (
+                  <a
+                    href={c.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1.5 inline-flex items-center gap-1 text-xs font-medium text-blue-500 hover:text-blue-600"
+                  >
+                    View certificate
+                    <ExternalLink size={12} />
+                  </a>
+                )}
               </div>
             ))}
           </Card>
